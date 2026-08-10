@@ -1,11 +1,10 @@
 ---
-layout: home
-title: Home
+layout: page
 ---
 
 # Emmanuel Randle
 
-**Natural Catastrophe Risk | Probabilistic Modeling | Earthquake & Tsunami Risk | Insurance & Resilience**
+**Natural Catastrophe Risk · Probabilistic Modeling · Earthquake & Tsunami Risk · Insurance & Resilience**
 
 I am a PhD researcher in Structural Engineering at Oregon State University working at the intersection of natural hazard engineering, catastrophe risk modeling, uncertainty, and community resilience.
 
@@ -15,7 +14,7 @@ My work focuses on understanding how earthquake and tsunami hazards translate in
 
 ### Seismic Portfolio Catastrophe Risk Model
 
-A reproducible catastrophe-risk modeling workflow that connects the **USGS National Seismic Hazard Model** to portfolio-level earthquake loss and insurance metrics.
+A reproducible catastrophe-risk modeling workflow connecting the **USGS National Seismic Hazard Model** to portfolio-level earthquake loss, insurance, and reinsurance risk metrics.
 
 The workflow includes:
 
@@ -31,8 +30,6 @@ The workflow includes:
 
 [View the project on GitHub](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss)
 
----
-
 ## Areas of Interest
 
 - Natural catastrophe risk modeling
@@ -42,10 +39,8 @@ The workflow includes:
 - Insurance and reinsurance analytics
 - Community resilience
 
----
-
 ## Current Work
 
-I am currently developing models that connect engineering representations of hazard and damage with portfolio-level financial and societal consequences.
+I develop models that connect engineering representations of natural hazards and physical damage with portfolio-level financial and societal consequences.
 
 This site documents selected projects, technical writing, and research-related work.
