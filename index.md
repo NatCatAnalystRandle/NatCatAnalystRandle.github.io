@@ -2,8 +2,6 @@
 layout: page
 ---
 
-# Emmanuel Randle
-
 **Natural Catastrophe Risk · Probabilistic Modeling · Earthquake & Tsunami Risk · Insurance & Resilience**
 
 I am a PhD researcher in Structural Engineering at Oregon State University working at the intersection of natural hazard engineering, catastrophe risk modeling, uncertainty, and community resilience.
