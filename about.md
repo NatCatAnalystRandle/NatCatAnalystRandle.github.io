@@ -4,7 +4,6 @@ title: About
 permalink: /about/
 ---
 
-# About
 
 I am Emmanuel Randle, a PhD researcher in Structural Engineering at Oregon State University working on natural catastrophe risk, probabilistic modeling, earthquake and tsunami risk, uncertainty, insurance, and community resilience.
 
