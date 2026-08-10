@@ -1,0 +1,139 @@
+---
+---
+
+@import "minima";
+
+/* =========================================================
+   Emmanuel Randle technical portfolio
+   ========================================================= */
+
+/* Slightly wider reading area */
+.wrapper {
+  max-width: 1050px;
+}
+
+/* Improve long-form case-study readability */
+.page-content {
+  line-height: 1.65;
+}
+
+.page-content p {
+  margin-bottom: 1.25rem;
+}
+
+/* More compact case-study headings */
+.page-heading {
+  line-height: 1.15;
+}
+
+.post-content h2 {
+  margin-top: 2.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.post-content h3 {
+  margin-top: 1.8rem;
+}
+
+/* Tables */
+.post-content table {
+  width: 100%;
+  margin: 1.5rem 0 2rem;
+  border-collapse: collapse;
+}
+
+.post-content th,
+.post-content td {
+  padding: 0.8rem 1rem;
+}
+
+/* Main action buttons */
+.case-study-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.case-study-button {
+  display: inline-block;
+  padding: 0.65rem 1rem;
+  border: 1px solid #2a7ae2;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.case-study-button:hover {
+  text-decoration: none;
+}
+
+/* Catastrophe-risk workflow */
+.cat-workflow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.workflow-step {
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+  background: #f8f8f8;
+  font-weight: 600;
+  text-align: center;
+}
+
+.workflow-arrow {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Highlight the key Phase 2 question */
+.key-question {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid #828282;
+  background: #f8f8f8;
+  font-weight: 600;
+}
+
+/* Keep figures from becoming excessively large */
+.post-content img {
+  display: block;
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+  margin: 1.5rem auto 2rem;
+}
+
+/* Better mobile layout */
+@media screen and (max-width: 600px) {
+  .cat-workflow {
+    display: block;
+  }
+
+  .workflow-step {
+    margin: 0.4rem 0;
+  }
+
+  .workflow-arrow {
+    display: block;
+    text-align: center;
+    transform: rotate(90deg);
+    margin: 0.1rem 0;
+  }
+
+  .case-study-actions {
+    display: block;
+  }
+
+  .case-study-button {
+    display: block;
+    margin-bottom: 0.75rem;
+    text-align: center;
+  }
+}
