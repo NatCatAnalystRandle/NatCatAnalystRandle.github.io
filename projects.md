@@ -28,4 +28,4 @@ The completed baseline workflow includes:
 
 **Status:** Baseline catastrophe-risk model complete. Spatial-correlation extension planned.
 
-[View source code on GitHub](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss)
+[Read the case study](/projects/seismic-catastrophe-risk-model/) · [View source code on GitHub](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss)
