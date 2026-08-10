@@ -6,3 +6,11 @@ description: >
   PhD researcher working on natural catastrophe risk,
   probabilistic modeling, earthquake and tsunami risk,
   insurance, and community resilience.
+
+header_pages:
+  - projects.md
+  - publications.md
+  - presentations.md
+  - writing.md
+  - awards.md
+  - about.md
