@@ -6,7 +6,11 @@ permalink: /projects/seismic-catastrophe-risk-model/
 
 **From USGS seismic hazard to portfolio damage, insurance loss, reinsurance recovery, and catastrophe-risk metrics**
 
-[View the source code on GitHub](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss)
+<div class="case-study-actions">
+  <a class="case-study-button" href="https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss">
+    View Source Code on GitHub
+  </a>
+</div>
 
 ---
 
@@ -37,7 +41,32 @@ The current release is **Phase 1**, a validated baseline model without spatial c
 
 ## Catastrophe-risk workflow
 
-**USGS NSHM → Event Catalog → Ground Motion → Damage → Ground-Up Loss → Insurance → Reinsurance → AAL · AEP · OEP · PML**
+<div class="cat-workflow">
+
+  <div class="workflow-step">USGS NSHM</div>
+  <div class="workflow-arrow">→</div>
+
+  <div class="workflow-step">Event Catalog</div>
+  <div class="workflow-arrow">→</div>
+
+  <div class="workflow-step">Ground Motion</div>
+  <div class="workflow-arrow">→</div>
+
+  <div class="workflow-step">Damage</div>
+  <div class="workflow-arrow">→</div>
+
+  <div class="workflow-step">Ground-Up Loss</div>
+  <div class="workflow-arrow">→</div>
+
+  <div class="workflow-step">Insurance</div>
+  <div class="workflow-arrow">→</div>
+
+  <div class="workflow-step">Reinsurance</div>
+  <div class="workflow-arrow">→</div>
+
+  <div class="workflow-step">AAL · AEP · OEP · PML</div>
+
+</div>
 
 The model is implemented as seven sequential and restartable Jupyter notebooks, with validation at every major stage.
 
@@ -175,9 +204,11 @@ Phase 2 will reuse the same portfolio, rupture set, event catalog, damage model,
 
 Keeping the baseline inputs fixed is important because it allows differences in portfolio loss to be attributed to the dependence assumption rather than to different earthquake realizations.
 
-The next question is:
+<p>The next question is:</p>
 
-> **How does spatial dependence change portfolio concentration, tail loss, PML, and reinsurance risk?**
+<div class="key-question">
+How does spatial dependence change portfolio concentration, tail loss, PML, and reinsurance risk?
+</div>
 
 ---
 
