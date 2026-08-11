@@ -37,7 +37,7 @@ Examined how spatial dependence in earthquake ground motion affects estimates of
 ### Post-Event Residential Displacement Including Seismic Hazard Spatial Correlation
 
 **NSF Cascadia CoPes Hub Annual Gathering**  
-April 16, 2026
+Gleneden Beach, Oregon · April 16-18, 2026
 
 **Emmanuel Randle and Andre R. Barbosa**
 
