@@ -61,8 +61,6 @@ Conducted numerical research on the use of vibro stone columns as periodic wave 
 
 The research used finite-element modeling to investigate wave propagation, band-gap behavior, and vibration attenuation across alternative vibroflot geometries.
 
-This work contributed to a peer-reviewed publication in *Discover Civil Engineering*.
-
 ---
 
 ## Professional Interests
