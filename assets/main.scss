@@ -137,3 +137,7 @@
     text-align: center;
   }
 }
+/* Remove default Minima footer */
+.site-footer {
+  display: none;
+}
