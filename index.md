@@ -4,41 +4,46 @@ layout: page
 
 **Natural Catastrophe Risk · Probabilistic Modeling · Earthquake & Tsunami Risk · Insurance & Resilience**
 
-I am a PhD researcher in Structural Engineering at Oregon State University working at the intersection of natural hazard engineering, catastrophe risk modeling, uncertainty, and community resilience.
+I am a PhD researcher in Structural Engineering at Oregon State University working at the intersection of **natural hazard engineering, catastrophe-risk modeling, uncertainty, and financial risk**.
 
-My work focuses on understanding how earthquake and tsunami hazards translate into physical damage, economic consequences, insurance loss, and broader impacts on communities.
+My work focuses on understanding how earthquakes and tsunamis translate into **physical damage, portfolio loss, insurance and reinsurance risk, and community consequences**.
+
+---
 
 ## Featured Project
 
 ### Seismic Portfolio Catastrophe Risk Model
 
-A reproducible catastrophe-risk modeling workflow connecting the **USGS National Seismic Hazard Model** to portfolio-level earthquake loss, insurance, and reinsurance risk metrics.
+I built an end-to-end earthquake catastrophe-risk model connecting the **USGS National Seismic Hazard Model** to stochastic event simulation, ground motion, damage, insurance loss, reinsurance recovery, and portfolio risk metrics.
 
-The workflow includes:
+**470 buildings · $384M portfolio · 2M simulated years · AAL · AEP · OEP · PML**
 
-- earthquake rupture occurrence modeling
-- stochastic event catalog generation
-- ground-motion simulation
-- building damage and ground-up loss
-- insurance and reinsurance terms
-- Average Annual Loss (AAL)
-- Occurrence Exceedance Probability (OEP)
-- Aggregate Exceedance Probability (AEP)
-- Probable Maximum Loss (PML)
+<div class="case-study-actions">
+  <a class="case-study-button" href="/projects/seismic-catastrophe-risk-model/">
+    Read the Case Study
+  </a>
 
-[View the project on GitHub](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss)
+  <a class="case-study-button" href="https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss">
+    View Source Code
+  </a>
+</div>
 
-## Areas of Interest
+---
 
-- Natural catastrophe risk modeling
-- Earthquake and tsunami risk
-- Probabilistic modeling and uncertainty
-- Spatial correlation and dependence
-- Insurance and reinsurance analytics
-- Community resilience
+## What I Work On
 
-## Current Work
+**Catastrophe Risk Modeling**  
+Connecting natural hazard, engineering damage, and portfolio financial risk.
 
-I develop models that connect engineering representations of natural hazards and physical damage with portfolio-level financial and societal consequences.
+**Earthquake & Tsunami Risk**  
+Probabilistic modeling of hazard, damage, uncertainty, and regional consequences.
 
-This site documents selected projects, technical writing, and research-related work.
+**Dependence & Correlation**  
+Understanding how spatial and statistical dependence changes portfolio and community risk.
+
+**Insurance & Reinsurance Analytics**  
+Translating physical catastrophe consequences into insured, retained, ceded, and tail-risk metrics.
+
+---
+
+Explore my [projects](/projects/), [publications](/publications/), [presentations](/presentations/), and [technical writing](/writing/).
