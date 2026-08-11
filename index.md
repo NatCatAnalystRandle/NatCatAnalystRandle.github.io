@@ -44,6 +44,4 @@ Understanding how spatial and statistical dependence changes portfolio and commu
 **Insurance & Reinsurance Analytics**  
 Translating physical catastrophe consequences into insured, retained, ceded, and tail-risk metrics.
 
----
 
-Explore my [projects](/projects/), [publications](/publications/), [presentations](/presentations/), and [technical writing](/writing/).
