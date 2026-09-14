@@ -1,14 +1,18 @@
 ---
 layout: page
-title: "Building an Earthquake Catastrophe Risk Model"
+title: "Seismic Correlation and Insurance Loss"
 permalink: /projects/seismic-catastrophe-risk-model/
 ---
 
-**From USGS seismic hazard to portfolio damage, insurance loss, reinsurance recovery, and catastrophe-risk metrics**
+**From USGS seismic sources to correlated portfolio loss, reinsurance capital, and parametric basis risk**
 
 <div class="case-study-actions">
-  <a class="case-study-button" href="https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss">
-    View Source Code on GitHub
+  <a class="case-study-button" href="https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/tree/v2.0.0">
+    Explore the Validated Project
+  </a>
+
+  <a class="case-study-button" href="https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.0">
+    View the v2.0.0 Release
   </a>
 </div>
 
@@ -16,26 +20,34 @@ permalink: /projects/seismic-catastrophe-risk-model/
 
 ## Project overview
 
-I built an end-to-end earthquake catastrophe-risk model that connects seismic hazard with the financial loss metrics used in insurance and reinsurance.
+I developed an end-to-end earthquake catastrophe-risk model that connects seismic source models and engineering damage with the financial metrics used in insurance, reinsurance, and risk transfer.
 
-Engineering analyses often stop at hazard or physical damage, while insurance analyses often begin with financial loss. I wanted to build the chain between the two.
+The model starts with the **USGS 2018 National Seismic Hazard Model** and progresses through rupture occurrence, stochastic event simulation, ground motion, structural and nonstructural damage, ground-up loss, insurance recovery, reinsurance, and parametric catastrophe-bond analysis.
 
-The model starts with the **USGS 2018 National Seismic Hazard Model** and progresses through earthquake occurrence, stochastic event simulation, ground motion, building damage, ground-up loss, insurance, reinsurance, and portfolio risk metrics.
+The completed workflow contains **13 sequential notebooks**. Phase 1 establishes a validated independent-residual baseline. Phase 2 introduces two spatial-correlation models while preserving the same event catalog, portfolio, policy terms, and paired random streams.
 
 ### At a glance
 
-| Metric | Baseline result |
+| Item | Project value |
 |---|---:|
 | Portfolio | 470 buildings in Seaside, Oregon |
 | Replacement value | $384.24 million |
 | Stochastic catalog | 2,000,000 years |
-| Simulated earthquake occurrences | 10,630 |
-| Ground-up AAL | $195,922 |
-| Gross insured AAL | $122,980 |
-| Ceded AAL | $63,677 |
-| Net retained AAL | $59,303 |
+| Earthquake occurrences | 10,630 |
+| Dependence cases | 3 |
+| Modeling notebooks | 13 |
+| Automated tests | 92 passing |
+| Final critical validation failures | 0 |
 
-The current release is **Phase 1**, a validated baseline model without spatial correlation among within-event site residuals.
+---
+
+## Research question
+
+<div class="key-question">
+How does spatial dependence in earthquake ground motion change damage, insured portfolio loss, retained tail risk, reinsurance requirements, and parametric basis risk?
+</div>
+
+A fair comparison requires more than running separate simulations. The project uses the same earthquake occurrences and paired random-number streams across all three dependence cases. This isolates changes caused by the spatial-dependence assumption from changes caused by different event samples or damage draws.
 
 ---
 
@@ -55,177 +67,156 @@ The current release is **Phase 1**, a validated baseline model without spatial c
   <div class="workflow-step">Damage</div>
   <div class="workflow-arrow">→</div>
 
-  <div class="workflow-step">Ground-Up Loss</div>
+  <div class="workflow-step">Portfolio Loss</div>
   <div class="workflow-arrow">→</div>
 
   <div class="workflow-step">Insurance</div>
   <div class="workflow-arrow">→</div>
 
-  <div class="workflow-step">Reinsurance</div>
+  <div class="workflow-step">Risk Transfer</div>
   <div class="workflow-arrow">→</div>
 
-  <div class="workflow-step">AAL · AEP · OEP · PML</div>
+  <div class="workflow-step">Tail Metrics</div>
 
 </div>
 
-The model is implemented as seven sequential and restartable Jupyter notebooks, with validation at every major stage.
+### Phase 1: validated baseline
+
+Phase 1 creates the full hazard-to-financial-loss chain:
+
+- rupture-level annual occurrence rates;
+- a 2-million-year annual event catalog;
+- PGA and SA(0.4 s) ground motions;
+- structural and nonstructural damage states;
+- ground-up and insured loss;
+- occurrence excess-of-loss reinsurance;
+- AAL, AEP, OEP, and PML.
+
+The baseline includes a shared between-event residual and correlated PGA and SA(0.4 s) residuals at each site. Within-event residuals are conditionally independent between sites.
+
+### Phase 2: spatial-dependence extension
+
+Phase 2 compares:
+
+1. **I0:** the Phase 1 independent-site baseline;
+2. **C1:** an Aldea et al. subduction spatial-correlation model;
+3. **C2:** a Goda–Atkinson spatial-correlation model.
+
+The marginal residual distributions, cross-intensity-measure dependence, catalog, and random streams are held fixed. The main controlled change is the spatial dependence among portfolio locations.
 
 ---
 
-## How the model works
+## Damage, insurance, and reinsurance
 
-### Hazard and event simulation
+Ground motion is translated into three repair-cost components:
 
-The model uses the **USGS 2018 CONUS National Seismic Hazard Model (5.2.4)** to represent Cascadia interface and Oregon intraslab earthquakes.
+- structural damage;
+- nonstructural drift-sensitive damage;
+- nonstructural acceleration-sensitive damage.
 
-Rupture-level annual occurrence rates are used to generate a **2-million-year stochastic catalog containing 10,630 earthquake occurrences**.
+A synthetic insurance policy applies a deductible equal to 10% of each building's replacement value. The financial calculations track ground-up, uninsured, gross insured, ceded, and retained losses.
 
-The source-model workflow preserves important distinctions between physical earthquake occurrence, epistemic alternatives, source scaling, and magnitude-frequency distributions.
+The frozen occurrence excess-of-loss program has:
 
-### Ground motion, damage, and loss
+| Term | Value |
+|---|---:|
+| Attachment | $18.81 million |
+| Occurrence limit | $61.84 million |
+| Participation | 100% |
 
-PGA and SA(0.4) are simulated across all 470 portfolio locations.
-
-Phase 1 includes:
-
-- shared between-event variability across the portfolio
-- correlated PGA and SA(0.4) residuals at the same site
-- conditionally independent within-event residuals between different sites
-
-Spatial correlation between sites is deliberately excluded from Phase 1 so that it can later be introduced as a controlled model extension.
-
-Ground motion is translated into structural and nonstructural damage and then into building-level repair loss.
-
-### Insurance and reinsurance
-
-A synthetic insurance program applies a **10% building-level deductible**.
-
-The resulting financial views include:
-
-- uninsured loss
-- gross insured loss
-- ceded reinsurance loss
-- net retained loss
-
-A synthetic occurrence excess-of-loss layer attaches at approximately **$18.81 million** and has a **$61.84 million occurrence limit**.
-
-This allows the same earthquake portfolio to be viewed from engineering, insurer, and reinsurer perspectives.
+The project also evaluates alternative occurrence layers, standalone annual aggregate protection, and aggregate protection stacked after the frozen occurrence program.
 
 ---
 
 ## Key findings
 
-### 1. Insurance and reinsurance materially reshape loss
+### 1. Spatial correlation changes retained tail risk more clearly than expected loss
 
-The baseline ground-up AAL is:
+The small gross insured AAL differences have paired bootstrap intervals that include zero. The simulation therefore does not establish a resolved AAL effect.
 
-**$195,922**
+The retained tail results are materially different. Under the same frozen occurrence excess-of-loss terms:
 
-After insurance terms, gross insured AAL is:
+| Case | Gross insured AAL | Ceded AAL | Retained 2,500-year AEP PML |
+|---|---:|---:|---:|
+| I0: independent | $122,979.56 | $63,676.60 | $19.36 million |
+| C1: Aldea | $123,443.43 | $58,654.69 | $33.27 million |
+| C2: Goda–Atkinson | $123,335.68 | $58,604.14 | $34.08 million |
 
-**$122,980**
+The stored paired uncertainty intervals for the retained 2,500-year PML differences exclude zero.
 
-Of that insured loss:
+![Gross insured AEP and OEP comparison](https://raw.githubusercontent.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/v2.0.0/data/processed/phase_2/notebook_13_phase_2_results/plots/gross_insured_tail_curves.png)
 
-- **$63,677** is ceded to reinsurance
-- **$59,303** remains as net retained AAL
+### 2. Fixed reinsurance terms do not preserve equivalent protection
 
-![Baseline average annual loss flow](https://raw.githubusercontent.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/main/data/processed/notebook_7_baseline_results_validation/plots/baseline_aal_loss_flow.png)
+Using the same attachment, the occurrence limit required to restore the independent case's retained 2,500-year PML increases under spatial correlation:
 
-Approximately **37% of ground-up AAL remains uninsured**, despite full insurance take-up in the synthetic portfolio, largely because of the building-level deductible.
-
----
-
-### 2. Nonstructural damage dominates expected loss
-
-| Damage component | Share of ground-up AAL |
+| Case | Required occurrence limit |
 |---|---:|
-| Structural | 8.74% |
-| Nonstructural drift-sensitive | 15.01% |
-| Nonstructural acceleration-sensitive | **76.25%** |
+| I0: independent | $61.84 million |
+| C1: Aldea | $75.90 million |
+| C2: Goda–Atkinson | $76.67 million |
 
-More than three quarters of expected repair loss comes from **acceleration-sensitive nonstructural damage**.
+These are conditional model results calculated with a $1,000 numerical search tolerance. They are not recommended insurance placements.
 
-This highlights an important difference between structural safety and portfolio financial risk: the components most important for life safety are not necessarily the components driving expected economic loss.
+![Required occurrence limits](https://raw.githubusercontent.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/v2.0.0/data/processed/phase_2/notebook_13_phase_2_results/plots/required_limit_comparison.png)
 
----
+### 3. Parametric protection introduces visible basis risk
 
-### 3. Reinsurance increases concentration in Cascadia risk
+A source-based magnitude-distance trigger is calibrated using catalog years 1 through 1,000,000 and frozen before evaluation on years 1,000,001 through 2,000,000.
 
-Cascadia interface earthquakes contribute approximately:
+The same collateralized payout vector is applied across all dependence cases, so the comparison does not refit the trigger to each loss result. The evaluation tracks protection shortfall, excess payout, collateral depletion, cash net loss, unfunded loss, and surplus separately.
 
-- **90.60% of ground-up AAL**
-- **95.49% of ceded AAL**
-
-![Average annual loss contribution by earthquake source](https://raw.githubusercontent.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/main/data/processed/notebook_7_baseline_results_validation/plots/baseline_source_aal_contributions.png)
-
-The ceded portfolio is therefore even more concentrated in Cascadia risk than the underlying physical-loss portfolio.
-
-Because excess-of-loss reinsurance responds disproportionately to severe events, the reinsurance structure changes not only the amount of loss retained but also the composition of the risk transferred.
+![Held-out parametric basis risk](https://raw.githubusercontent.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/v2.0.0/data/processed/phase_2/notebook_13_phase_2_results/plots/evaluation_basis_risk.png)
 
 ---
 
-### 4. Occurrence and annual aggregate risk are different
+## Validation and reproducibility
 
-The largest modeled occurrence is a **magnitude 9.34 Cascadia interface earthquake** producing approximately:
+The workflow is deterministic, restartable, and designed for audit.
 
-- **$282.75 million** ground-up loss
-- **$244.33 million** gross insured loss
-- **$61.84 million** ceded loss
+It includes:
 
-The ceded loss reaches the full occurrence-layer limit.
+- frozen configuration records;
+- common event catalogs and paired random streams;
+- chunked processing for large tables;
+- row-count, uniqueness, and schema checks;
+- accounting reconciliation at building, event, and annual levels;
+- SHA-256 hashes and artifact inventories;
+- explicit zero-event years in annual loss series;
+- paired bootstrap uncertainty;
+- repository-level tests and validation.
 
-However, maximum **annual aggregate ceded loss** reaches approximately **$90.41 million**.
+The completed release passed:
 
-This can exceed the $61.84 million occurrence limit because multiple earthquakes can generate separate reinsurance recoveries within the same year.
-
-It illustrates why catastrophe models distinguish between:
-
-- **OEP**, which focuses on the largest event loss in a year
-- **AEP**, which captures total annual loss accumulation
-
----
-
-## Validation
-
-The workflow was designed to be auditable and restartable, with validation spanning source rates, event accounting, ground motion, damage, financial transformations, exceedance curves, and output integrity.
-
-**87 critical reporting checks:** 0 failures, 0 unresolved warnings
-
-**54 repository-hardening checks:** 0 critical failures
-
-The complete validation records are available in the GitHub repository.
+- **92 automated tests**;
+- **65 upstream artifact checks**, with no skipped checks;
+- **14 final synthesis checks**;
+- **zero critical validation failures**.
 
 ---
 
-## What's next: spatial correlation
+## Interpretation limits
 
-Phase 2 will reuse the same portfolio, rupture set, event catalog, damage model, insurance terms, and reinsurance structure while introducing spatial correlation among within-event ground-motion residuals.
+This is a transparent research and portfolio demonstration rather than a production catastrophe model or insurance quotation.
 
-Keeping the baseline inputs fixed is important because it allows differences in portfolio loss to be attributed to the dependence assumption rather than to different earthquake realizations.
+The results are conditional on:
 
-<p>The next question is:</p>
+- one synthetic 470-building portfolio in Seaside, Oregon;
+- the USGS NSHM release and selected ground-motion assumptions;
+- HAZUS-style fragility and repair-cost approximations;
+- synthetic insurance, reinsurance, and parametric terms;
+- building repair loss only;
+- no contents, business interruption, demand surge, claims inflation, or reinstatement pricing;
+- limited order-statistic support at the most extreme return periods.
 
-<div class="key-question">
-How does spatial dependence change portfolio concentration, tail loss, PML, and reinsurance risk?
-</div>
-
----
-
-## Scope
-
-This project is a transparent research and portfolio demonstration, not a production catastrophe model or insurance quotation.
-
-The baseline uses synthetic insurance and reinsurance terms, a W2 demonstration portfolio, building repair-cost losses only, a direct-SA(0.4) fragility approximation, and no spatial correlation among Phase 1 within-event site residuals.
-
-The complete assumptions, methodology, limitations, validation outputs, and implementation details are documented in the repository.
+Sparse annual losses also make selected VaR measures non-informative. TVaR and supported PML measures are used for the substantive tail comparisons. RAROC outputs are transparent assumption grids, not market pricing estimates.
 
 ---
 
 ## Explore the project
 
-The repository contains the seven modeling notebooks, methodology, validation records, figures, setup instructions, and reproducibility documentation.
-
-**[View the complete project on GitHub](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss)**
+- **[Validated v2.0.0 source and results](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/tree/v2.0.0)**
+- **[Phase 2 results report](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/blob/v2.0.0/data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_results_report.md)**
+- **[v2.0.0 release](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.0)**
 
 [Back to Projects](/projects/)

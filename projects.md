@@ -6,26 +6,24 @@ permalink: /projects/
 
 Selected technical projects connecting natural hazard engineering, probabilistic catastrophe-risk modeling, and financial risk.
 
-## Seismic Portfolio Catastrophe Risk Model
+## Seismic Correlation and Insurance Loss
 
-**Earthquake catastrophe risk · USGS NSHM · Monte Carlo simulation · Insurance · Reinsurance**
+**Earthquake catastrophe risk · USGS NSHM · Spatial correlation · Insurance · Reinsurance · Parametric risk transfer**
 
-A reproducible end-to-end earthquake catastrophe-risk modeling workflow that connects the **USGS National Seismic Hazard Model** to portfolio-level damage, ground-up loss, insured loss, retained loss, ceded loss, and catastrophe-risk metrics.
+A completed, reproducible 13-notebook workflow that connects the **USGS 2018 National Seismic Hazard Model** to earthquake occurrence, spatially correlated ground motion, structural and nonstructural damage, portfolio loss, insurance, reinsurance, and parametric catastrophe-bond analysis.
 
-The completed baseline workflow includes:
+The project includes:
 
-- rupture-level earthquake occurrence modeling
-- stochastic annual event catalog generation
-- portfolio ground-motion simulation
-- building damage and ground-up economic loss
-- insurance deductibles and limits
-- retained and ceded reinsurance loss
-- Average Annual Loss (AAL)
-- Occurrence Exceedance Probability (OEP)
-- Aggregate Exceedance Probability (AEP)
-- Probable Maximum Loss (PML)
-- systematic validation throughout the modeling workflow
+- rupture-level annual-rate extraction and a 2,000,000-year stochastic catalog;
+- paired independent and spatially correlated ground-motion fields;
+- structural and nonstructural damage simulation;
+- ground-up, gross insured, uninsured, ceded, and retained loss;
+- AAL, AEP, OEP, return-period PML, and TVaR-based tail metrics;
+- occurrence excess-of-loss and annual aggregate reinsurance sensitivity;
+- required-limit, diversification, and transparent RAROC assumption grids;
+- a training/evaluation parametric trigger and out-of-sample basis-risk analysis;
+- paired bootstrap uncertainty and artifact-level reproducibility checks.
 
-**Status:** Baseline catastrophe-risk model complete. Spatial-correlation extension planned.
+**Status:** Completed, validated, and released as [v2.0.0](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.0).
 
-[Read the full case study](/projects/seismic-catastrophe-risk-model/) · [View source code on GitHub](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss)
+[Read the full case study](/projects/seismic-catastrophe-risk-model/) · [Explore the validated source and results](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/tree/v2.0.0)
