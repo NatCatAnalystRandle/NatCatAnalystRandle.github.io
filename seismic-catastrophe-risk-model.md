@@ -19,9 +19,6 @@ permalink: /projects/seismic-catastrophe-risk-model/
 
 ## Project overview
 
-
-## Project overview
-
 I developed an end-to-end earthquake catastrophe-risk model that connects seismic source models and engineering damage with the financial metrics used in insurance, reinsurance, and risk transfer.
 
 The model starts with the **USGS 2018 National Seismic Hazard Model** and progresses through rupture occurrence, stochastic event simulation, ground motion, structural and nonstructural damage, ground-up loss, insurance recovery, reinsurance, and parametric catastrophe-bond analysis.
