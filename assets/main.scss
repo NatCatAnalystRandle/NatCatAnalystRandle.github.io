@@ -847,6 +847,114 @@ a:focus {
   font-weight: 650;
 }
 
+/* Profile, presentation, and recognition cards */
+
+.entry-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.entry-card {
+  min-width: 0;
+  padding: 27px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--paper);
+  box-shadow: 0 8px 22px rgba(10, 39, 66, 0.045);
+}
+
+.entry-card h2,
+.entry-card h3 {
+  margin: 0 0 12px;
+  padding: 0;
+  border: 0;
+  font-size: 1.18rem;
+  line-height: 1.38;
+}
+
+.entry-card p {
+  margin: 12px 0 0;
+  color: #617286;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.entry-meta {
+  display: block;
+  margin-bottom: 14px;
+  color: #08716f;
+  font-size: 11px;
+  font-weight: 780;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.entry-authors {
+  color: #304d63 !important;
+  font-weight: 680;
+}
+
+.education-list {
+  display: grid;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.education-item {
+  display: grid;
+  grid-template-columns: minmax(190px, 0.38fr) minmax(0, 1fr);
+  gap: 32px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--paper);
+}
+
+.education-item h3 {
+  margin: 0;
+  font-size: 1.12rem;
+}
+
+.education-item p {
+  margin: 0 0 10px;
+  color: #5a6f82;
+  font-size: 0.92rem;
+}
+
+.education-degree {
+  color: var(--navy-deep) !important;
+  font-weight: 730;
+}
+
+.profile-summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+  gap: 34px;
+  align-items: start;
+}
+
+.profile-note {
+  padding: 25px;
+  border-radius: var(--radius-md);
+  color: #dce8ed;
+  background: var(--navy);
+}
+
+.profile-note strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.profile-note p {
+  margin: 0;
+  color: #bfd0d9;
+  font-size: 0.9rem;
+}
+
 /* Long-form content */
 
 .post-content table {
@@ -973,7 +1081,8 @@ a:focus {
 @media screen and (max-width: 900px) {
   .featured-project,
   .project-card-large,
-  .methods-panel {
+  .methods-panel,
+  .profile-summary {
     grid-template-columns: 1fr;
   }
 
@@ -1116,6 +1225,7 @@ a:focus {
   .research-grid,
   .capability-grid,
   .metric-grid,
+  .entry-list,
   .cat-workflow,
   .methods-list,
   .footer-grid {
@@ -1155,6 +1265,11 @@ a:focus {
   .case-study-button {
     width: 100%;
     text-align: center;
+  }
+
+  .education-item {
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .footer-grid {
