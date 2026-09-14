@@ -1,22 +1,24 @@
 ---
-layout: page
+layout: default
 title: "Seismic Correlation and Insurance Loss"
 permalink: /projects/seismic-catastrophe-risk-model/
 ---
 
-**From USGS seismic sources to correlated portfolio loss, reinsurance capital, and parametric basis risk**
+<article class="post project-case-study">
+  <div class="post-content" markdown="1">
 
-<div class="case-study-actions">
-  <a class="case-study-button" href="https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/tree/v2.0.0">
-    Explore the Validated Project
-  </a>
+<section class="project-hero" aria-labelledby="case-study-title">
+  <span class="eyebrow">Technical case study · Version 2.0.0</span>
+  <h1 id="case-study-title">Seismic Correlation and Insurance Loss</h1>
+  <p>From USGS seismic sources to correlated portfolio loss, reinsurance requirements, and parametric basis risk.</p>
+  <div class="case-study-actions">
+    <a class="case-study-button" href="https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/tree/v2.0.0">Explore the validated project</a>
+    <a class="case-study-button" href="https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.0">View the v2.0.0 release</a>
+  </div>
+</section>
 
-  <a class="case-study-button" href="https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.0">
-    View the v2.0.0 Release
-  </a>
-</div>
+## Project overview
 
----
 
 ## Project overview
 
@@ -220,3 +222,7 @@ Sparse annual losses also make selected VaR measures non-informative. TVaR and s
 - **[v2.0.0 release](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.0)**
 
 [Back to Projects](/projects/)
+
+
+  </div>
+</article>
