@@ -22,7 +22,7 @@ permalink: /awards/
 <details>
   <summary>View the mini-conference participation certificate</summary>
   <figure>
-    <img src="{{ '/assets/images/nheri-certificate.jpg' | relative_url }}" alt="NHERI GSC Mini-Conference certificate of participation for Emmanuel Randle">
+    <img src="{{ '/assets/images/nheri-certificate.png' | relative_url }}" alt="NHERI GSC Mini-Conference certificate of participation for Emmanuel Randle">
     <figcaption>Certificate of participation, separate from the team award.</figcaption>
   </figure>
 </details>

@@ -34,8 +34,8 @@ I am interested in how these relationships affect building functionality, debris
     <p>My interests extend to the dependence between hazards and their consequences. Training at the PTRA workshop at GFZ in Potsdam supports my work in probabilistic tsunami risk analysis.</p>
   </div>
   <figure>
-    <img src="{{ '/assets/images/copes-field-visit.jpg' | relative_url }}" alt="Emmanuel Randle with members of the Cascadia CoPes research community during a coastal field visit">
-    <figcaption>An outdoor activity with the CoPes research community.</figcaption>
+    <img src="{{ '/assets/images/ptra-workshop-session.jpg' | relative_url }}" alt="Emmanuel Randle and other participants working through a tsunami risk exercise at the PTRA workshop at GFZ in Potsdam">
+    <figcaption>Working session during the PTRA workshop at GFZ in Potsdam.</figcaption>
   </figure>
 </div>
 

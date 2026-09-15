@@ -44,8 +44,8 @@ I serve as **Co-Chair of the Structural Engineering Institute (SEI) Student Chap
     <figcaption>Chapter activities with students and guests.</figcaption>
   </figure>
   <figure>
-    <img src="{{ '/assets/images/eeri-outreach-booth.jpg' | relative_url }}" alt="OSU EERI Student Chapter outreach booth">
-    <figcaption>OSU EERI Student Chapter outreach.</figcaption>
+    <img src="{{ '/assets/images/13ncee-osu-booth.jpg' | relative_url }}" alt="Emmanuel Randle volunteering at the Oregon State University College of Engineering booth at 13NCEE">
+    <figcaption>Volunteering at the OSU College of Engineering booth during 13NCEE.</figcaption>
   </figure>
 </div>
 
@@ -62,11 +62,6 @@ I coordinated **“Natural Catastrophe Risk and Models: A (re)insurer's Perspect
 </details>
 
 Other chapter activities have included a COWI speaker meeting, Shake Table Night, and opportunities for students to meet and exchange ideas. I also volunteered at the OSU College of Engineering booth at the 13th National Conference on Earthquake Engineering.
-
-<figure class="entry-photo portrait">
-  <img src="{{ '/assets/images/13ncee-osu-booth.jpg' | relative_url }}" alt="Emmanuel Randle volunteering at the Oregon State University College of Engineering booth at 13NCEE">
-  <figcaption>Volunteering at the OSU College of Engineering booth during 13NCEE.</figcaption>
-</figure>
 
 ## Get in touch
 
