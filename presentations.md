@@ -1,63 +1,79 @@
 ---
 layout: page
-title: Presentations
+title: Presentations & workshops
+kicker: Research in conversation
+description: Selected talks, posters, and opportunities to learn from the natural-hazards community.
 permalink: /presentations/
 ---
 
-<p class="page-intro">Selected conference presentations, research posters, and specialized training in earthquake engineering, natural hazards, computational methods, and catastrophe risk.</p>
+<section class="text-entry">
+  <p class="entry-date">July 13 to 17, 2026 / Portland, Oregon</p>
+  <h2>13th National Conference on Earthquake Engineering</h2>
+  <h3>Seismic Damage Assessment of Critical Facilities Accounting for Spatially Correlated Ground Motion Intensity Measures</h3>
+  <p class="entry-meta">Oral presentation / Conference Paper ID 4507<br>Emmanuel Randle and Andre R. Barbosa</p>
+  <p>A seismic damage-assessment framework examining how spatially correlated ground-motion intensities influence damage estimates for critical facilities.</p>
+  <div class="photo-pair">
+    <figure>
+      <img src="{{ '/assets/images/13ncee-presentation.jpg' | relative_url }}" alt="Emmanuel Randle presenting at the 13th National Conference on Earthquake Engineering">
+      <figcaption>Presenting the conference paper at 13NCEE.</figcaption>
+    </figure>
+    <figure>
+      <img src="{{ '/assets/images/13ncee-portrait.jpg' | relative_url }}" alt="Emmanuel Randle at the 13th National Conference on Earthquake Engineering">
+      <figcaption>13NCEE in Portland, Oregon.</figcaption>
+    </figure>
+  </div>
+</section>
 
-## Research presentations
+<section class="text-entry">
+  <p class="entry-date">May 28 to 29, 2026 / Berkeley, California</p>
+  <h2>NHERI Computational Symposium</h2>
+  <h3>Impact of Spatial Correlation on Population Dislocation Estimates for Cascadia Subduction Zone Earthquake</h3>
+  <p class="entry-meta">Poster presentation<br>Emmanuel Randle and Andre R. Barbosa</p>
+  <p>Research on how spatial dependence in earthquake ground motion affects population dislocation estimates under Cascadia earthquake scenarios.</p>
+  <figure class="entry-photo">
+    <img src="{{ '/assets/images/nheri-symposium-poster.jpg' | relative_url }}" alt="Emmanuel Randle discussing his research poster at the 2026 NHERI Computational Symposium">
+    <figcaption>Discussing the research poster at the NHERI Computational Symposium.</figcaption>
+  </figure>
+</section>
 
-<div class="entry-list">
-  <article class="entry-card">
-    <span class="entry-meta">Oral presentation · July 13–17, 2026</span>
-    <h3>Seismic Damage Assessment of Critical Facilities Accounting for Spatially Correlated Ground Motion Intensities</h3>
-    <p><strong>13th National Conference on Earthquake Engineering</strong><br>Portland, Oregon · Conference Paper ID 4507</p>
-    <p class="entry-authors">Emmanuel Randle and Andre R. Barbosa</p>
-    <p>Presented a seismic damage-assessment framework examining how spatially correlated ground-motion intensities influence damage estimates for critical facilities.</p>
-  </article>
+<section class="text-entry">
+  <p class="entry-date">April 16 to 18, 2026 / Gleneden Beach, Oregon</p>
+  <h2>NSF Cascadia CoPes Hub Annual Gathering</h2>
+  <h3>Post-Event Residential Displacement Including Seismic Hazard Spatial Correlation</h3>
+  <p class="entry-meta">Research presentation<br>Emmanuel Randle and Andre R. Barbosa</p>
+  <p>How seismic-hazard spatial correlation influences estimates of residential displacement following major earthquakes.</p>
+  <figure class="entry-photo">
+    <img src="{{ '/assets/images/copes-presentation.jpg' | relative_url }}" alt="Emmanuel Randle presenting research at an NSF Cascadia CoPes Hub gathering">
+    <figcaption>Presenting residential displacement research to the CoPes community.</figcaption>
+  </figure>
+</section>
 
-  <article class="entry-card">
-    <span class="entry-meta">Poster presentation · May 28–29, 2026</span>
-    <h3>Impact of Spatial Correlation on Population Dislocation Estimates for Cascadia Subduction Zone Earthquake</h3>
-    <p><strong>NHERI Computational Symposium</strong><br>Berkeley, California</p>
-    <p class="entry-authors">Emmanuel Randle and Andre R. Barbosa</p>
-    <p>Examined how spatial dependence in earthquake ground motion affects estimates of post-earthquake population dislocation under Cascadia Subduction Zone scenarios.</p>
-  </article>
-
-  <article class="entry-card">
-    <span class="entry-meta">Research presentation · April 16–18, 2026</span>
-    <h3>Post-Event Residential Displacement Including Seismic Hazard Spatial Correlation</h3>
-    <p><strong>NSF Cascadia CoPes Hub Annual Gathering</strong><br>Gleneden Beach, Oregon</p>
-    <p class="entry-authors">Emmanuel Randle and Andre R. Barbosa</p>
-    <p>Presented research investigating how seismic-hazard spatial correlation influences estimates of residential displacement following major earthquake events.</p>
-  </article>
-
-  <article class="entry-card">
-    <span class="entry-meta">Research presentation · February 9–10, 2026</span>
-    <h3>Effects of Seismic Hazard Spatial Correlation on Post-Event Residential Population Displacement</h3>
-    <p><strong>Navigating Coastal Hazards 3 Workshop</strong><br>Astoria, Oregon</p>
-    <p class="entry-authors">Emmanuel Randle and Andre R. Barbosa</p>
-    <p>Presented research on the implications of spatially correlated seismic ground motion for estimating post-event residential population displacement in coastal communities.</p>
-  </article>
-</div>
+<section class="text-entry">
+  <p class="entry-date">February 9 to 10, 2026 / Astoria, Oregon</p>
+  <h2>Navigating Coastal Hazards 3 Workshop</h2>
+  <h3>Effects of Seismic Hazard Spatial Correlation on Post-Event Residential Population Displacement</h3>
+  <p class="entry-meta">Research presentation<br>Emmanuel Randle and Andre R. Barbosa</p>
+  <p>Implications of spatially correlated ground motion for residential population displacement in coastal communities.</p>
+</section>
 
 ## Specialized training
 
-<div class="entry-list">
-  <article class="entry-card">
-    <span class="entry-meta">Advanced computing · August 11–13, 2026</span>
-    <h3>Strategic Program to Accelerate Researchers in Computing</h3>
-    <p><strong>Texas Advanced Computing Center</strong><br>Austin, Texas</p>
-    <p>Three-day intensive workshop focused on strengthening researchers' capabilities in advanced and high-performance computational methods.</p>
-    <p><a class="text-link" href="https://www.designsafe-ci.org/learning-center/sparc/">Program information</a></p>
-  </article>
+<section class="text-entry">
+  <p class="entry-date">August 11 to 13, 2026 / Austin, Texas</p>
+  <h3>Strategic Program to Accelerate Researchers in Computing (SPARC)</h3>
+  <p class="entry-meta">Texas Advanced Computing Center</p>
+  <p>An intensive workshop on advanced and high-performance computational methods for research.</p>
+  <p><a href="https://www.designsafe-ci.org/learning-center/sparc/">Program information</a></p>
+</section>
 
-  <article class="entry-card">
-    <span class="entry-meta">Probabilistic tsunami risk · June 1–4, 2026</span>
-    <h3>From Scenarios to Consequences: Probabilistic Tsunami Risk Analysis with Geo-INQUIRE Services</h3>
-    <p><strong>GFZ Helmholtz Centre for Geosciences</strong><br>Potsdam, Germany</p>
-    <p>Specialized workshop connecting tsunami hazard scenarios with exposure, consequences, and risk-assessment workflows using Geo-INQUIRE services.</p>
-    <p><a class="text-link" href="https://www.geo-inquire.eu/dissemination/workshops/probabilistic-tsunami-risk-analysis">Workshop information</a></p>
-  </article>
-</div>
+<section class="text-entry">
+  <p class="entry-date">June 1 to 4, 2026 / Potsdam, Germany</p>
+  <h3>From Scenarios to Consequences: Probabilistic Tsunami Risk Analysis with Geo-INQUIRE Services</h3>
+  <p class="entry-meta">GFZ Helmholtz Centre for Geosciences</p>
+  <p>I participated in training connecting tsunami hazard scenarios with exposure, consequences, and probabilistic risk assessment using Geo-INQUIRE services.</p>
+  <figure class="entry-photo">
+    <img src="{{ '/assets/images/ptra-workshop-group.jpg' | relative_url }}" alt="Participants at the probabilistic tsunami risk analysis workshop at GFZ in Potsdam, Germany">
+    <figcaption>Workshop participants at GFZ in Potsdam.</figcaption>
+  </figure>
+  <p><a href="https://www.geo-inquire.eu/dissemination/workshops/probabilistic-tsunami-risk-analysis">Workshop information</a></p>
+</section>

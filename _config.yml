@@ -1,15 +1,10 @@
-theme: minima
-
 title: Emmanuel Randle
-
 description: >
-  PhD researcher working on natural catastrophe risk,
-  probabilistic modeling, earthquake and tsunami risk,
-  insurance, reinsurance, and community resilience.
-
-header_pages:
-  - projects.md
-  - research.md
-  - presentations.md
-  - awards.md
-  - about.md
+  Doctoral researcher in earthquake and tsunami risk, uncertainty and correlation,
+  damage and population consequences, and catastrophe risk for insurance and reinsurance.
+url: "https://natcatanalystrandle.github.io"
+baseurl: ""
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md

@@ -1,93 +1,73 @@
 ---
 layout: page
-title: About
+title: About me
+kicker: Background & community
+description: Civil engineering, natural hazards, and an interest in how risk informs decisions.
 permalink: /about/
 ---
 
-<div class="profile-summary">
-  <div>
-    <p class="page-intro">I am Emmanuel Randle, a PhD researcher in Civil Engineering at Oregon State University specializing in structural engineering, natural catastrophe risk, and community resilience.</p>
+I am Emmanuel Randle, a doctoral researcher in Civil Engineering at Oregon State University, specializing in structural engineering. My research focuses on earthquake and tsunami risk, uncertainty, damage modeling, and community resilience.
 
-    <p>My work sits at the intersection of earthquake and tsunami risk, probabilistic modeling, uncertainty and dependence, engineering damage, portfolio loss, and population consequences.</p>
+I enjoy work that connects detailed engineering questions with their consequences for people and institutions. Alongside my PhD, I developed an independent earthquake catastrophe-risk project that follows losses through insurance and reinsurance contracts and explores parametric risk transfer.
 
-    <p>A central theme is understanding how uncertainty and correlation propagate through catastrophe-risk systems, from hazard and ground motion through physical damage and ultimately into financial and societal consequences.</p>
-  </div>
-
-  <aside class="profile-note">
-    <strong>Current focus</strong>
-    <p>Building transparent models that connect engineering representations of natural hazards with regional damage, portfolio risk, and community consequences.</p>
-  </aside>
-</div>
-
-## Areas of interest
-
-<div class="focus-grid">
-  <article class="focus-card">
-    <span class="focus-card-number">01</span>
-    <h3>Natural-hazard risk</h3>
-    <p>Earthquake and tsunami risk, structural and nonstructural damage, functionality, debris, casualties, and population displacement.</p>
-  </article>
-
-  <article class="focus-card">
-    <span class="focus-card-number">02</span>
-    <h3>Probability and dependence</h3>
-    <p>Monte Carlo simulation, spatial correlation, statistical dependence, uncertainty quantification, and model validation.</p>
-  </article>
-
-  <article class="focus-card">
-    <span class="focus-card-number">03</span>
-    <h3>Financial applications</h3>
-    <p>Catastrophe modeling, insurance and reinsurance analytics, portfolio risk, risk transfer, and resilience finance.</p>
-  </article>
-</div>
+My professional interests include catastrophe modeling, vulnerability research, reinsurance analytics, and insurance-linked securities. I want to understand both the physical risk and the financial decisions that depend on it.
 
 ## Education
 
-<div class="education-list">
-  <article class="education-item">
-    <div>
-      <h3>Oregon State University</h3>
-      <span class="entry-meta">September 2024 to present</span>
-    </div>
-    <div>
-      <p class="education-degree">PhD, Civil Engineering · Structural Engineering</p>
-      <p><strong>Minor:</strong> Statistics</p>
-      <p>Doctoral research in catastrophe-risk modeling, earthquake and tsunami risk, correlation and uncertainty propagation, infrastructure performance, damage and loss, and population displacement.</p>
-    </div>
-  </article>
+<section class="text-entry">
+  <p class="entry-date">September 2024 to present</p>
+  <h3>Oregon State University</h3>
+  <p>PhD, Civil Engineering<br>Specialization: Structural Engineering<br>Minor: Statistics</p>
+  <p class="entry-meta">Research in earthquake and tsunami risk, uncertainty propagation, correlation modeling, damage, and population displacement.</p>
+</section>
 
-  <article class="education-item">
-    <div>
-      <h3>Durham University</h3>
-      <span class="entry-meta">United Kingdom</span>
-    </div>
-    <div>
-      <p class="education-degree">MSc, Civil Engineering · Structural Engineering</p>
-      <p><strong>Research project:</strong> <em>Discrete Macro-Element Modelling of URM Veneer Walls Subjected to Out-of-Plane Loads</em></p>
-      <p>Developed and validated a simplified numerical model for predicting the out-of-plane response of unreinforced masonry veneer walls using experimental data and higher-fidelity numerical results.</p>
-    </div>
-  </article>
+<section class="text-entry">
+  <h3>Durham University</h3>
+  <p>MSc, Civil Engineering<br>Specialization: Structural Engineering</p>
+  <p class="entry-meta">Research project: <em>Discrete Macro-Element Modelling of URM Veneer Walls Subjected to Out-of-Plane Loads.</em></p>
+  <p>I developed and validated a simplified model of masonry veneer wall response using experimental data and higher-fidelity numerical results.</p>
+</section>
 
-  <article class="education-item">
-    <div>
-      <h3>University of Lagos</h3>
-      <span class="entry-meta">Nigeria</span>
-    </div>
-    <div>
-      <p class="education-degree">BSc, Civil and Environmental Engineering</p>
-      <p>Conducted finite-element research on vibro stone columns as periodic wave barriers for mitigating train-induced Lamb and surface-wave vibrations.</p>
-    </div>
-  </article>
+<section class="text-entry">
+  <h3>University of Lagos</h3>
+  <p>BSc, Civil and Environmental Engineering</p>
+  <p class="entry-meta">Finite-element research on vibro stone columns as periodic wave barriers for mitigating train-induced vibrations.</p>
+</section>
+
+<h2 id="leadership">Leadership &amp; service</h2>
+
+I serve as **Co-Chair of the Structural Engineering Institute (SEI) Student Chapter** and **Treasurer of the Earthquake Engineering Research Institute (EERI) Student Chapter** at Oregon State University.
+
+<div class="chapter-photos">
+  <figure>
+    <img src="{{ '/assets/images/chapter-community.jpg' | relative_url }}" alt="OSU engineering students and guests at a chapter gathering">
+    <figcaption>Chapter activities with students and guests.</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/assets/images/eeri-outreach-booth.jpg' | relative_url }}" alt="OSU EERI Student Chapter outreach booth">
+    <figcaption>OSU EERI Student Chapter outreach.</figcaption>
+  </figure>
 </div>
 
-## Professional direction
+### Bringing a reinsurance perspective to campus
 
-I am particularly interested in roles and collaborations that connect engineering science with catastrophe modeling, insurance, reinsurance, portfolio risk, structured risk transfer, resilience, and disaster-risk financing.
+I coordinated **“Natural Catastrophe Risk and Models: A (re)insurer's Perspective,”** a guest seminar with **Dr. Giannis Gidaris of Swiss Re**. I invited him, managed the correspondence, and designed the event poster. The seminar connected our engineering community with an industry perspective on natural catastrophe risk and modeling.
 
-The common thread is translation: turning detailed hazard and engineering models into information that supports defensible decisions without hiding the assumptions and uncertainty behind the results.
+<details>
+  <summary>View the Swiss Re seminar poster</summary>
+  <figure>
+    <img src="{{ '/assets/images/swiss-re-seminar-poster.jpg' | relative_url }}" alt="Poster for the Swiss Re natural catastrophe risk seminar organized by Emmanuel Randle">
+    <figcaption>Guest seminar hosted through OSU's SEI and EERI student chapters.</figcaption>
+  </figure>
+</details>
 
-<div class="button-row">
-  <a class="button button-primary" href="/projects/">View technical projects</a>
-  <a class="button" href="/research/">Explore ongoing research</a>
-  <a class="button" href="https://www.linkedin.com/in/emmanuel-randle/">Connect on LinkedIn</a>
-</div>
+Other chapter activities have included a COWI speaker meeting, Shake Table Night, and opportunities for students to meet and exchange ideas. I also volunteered at the OSU College of Engineering booth at the 13th National Conference on Earthquake Engineering.
+
+<figure class="entry-photo portrait">
+  <img src="{{ '/assets/images/13ncee-osu-booth.jpg' | relative_url }}" alt="Emmanuel Randle volunteering at the Oregon State University College of Engineering booth at 13NCEE">
+  <figcaption>Volunteering at the OSU College of Engineering booth during 13NCEE.</figcaption>
+</figure>
+
+## Get in touch
+
+Find my work on [GitHub](https://github.com/NatCatAnalystRandle) or connect with me on [LinkedIn](https://www.linkedin.com/in/emmanuel-randle/).

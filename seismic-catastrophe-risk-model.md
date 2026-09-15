@@ -1,21 +1,15 @@
 ---
-layout: default
+layout: page
 title: "Seismic Correlation and Insurance Loss"
+kicker: Technical case study / v2.0.0
+description: Earthquake portfolio loss, reinsurance requirements, and parametric basis risk.
 permalink: /projects/seismic-catastrophe-risk-model/
 ---
 
-<article class="post project-case-study">
-  <div class="post-content" markdown="1">
-
-<section class="project-hero" aria-labelledby="case-study-title">
-  <span class="eyebrow">Technical case study · Version 2.0.0</span>
-  <h1 id="case-study-title">Seismic Correlation and Insurance Loss</h1>
-  <p>From USGS seismic sources to correlated portfolio loss, reinsurance requirements, and parametric basis risk.</p>
-  <div class="case-study-actions">
-    <a class="case-study-button" href="https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/tree/v2.0.0">Explore the validated project</a>
-    <a class="case-study-button" href="https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.0">View the v2.0.0 release</a>
-  </div>
-</section>
+<div class="case-study-actions">
+  <a href="https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/tree/v2.0.0">Explore the validated project</a>
+  <a href="https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.0">View the v2.0.0 release</a>
+</div>
 
 ## Project overview
 
@@ -143,7 +137,10 @@ The retained tail results are materially different. Under the same frozen occurr
 
 The stored paired uncertainty intervals for the retained 2,500-year PML differences exclude zero.
 
-![Gross insured AEP and OEP comparison](https://raw.githubusercontent.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/v2.0.0/data/processed/phase_2/notebook_13_phase_2_results/plots/gross_insured_tail_curves.png)
+<figure class="case-study-figure">
+  <img src="{{ '/assets/images/gross-insured-tail-curves.png' | relative_url }}" alt="Gross insured aggregate and occurrence exceedance curves across the independent and spatially correlated cases">
+  <figcaption>Gross insured AEP and OEP comparison.</figcaption>
+</figure>
 
 ### 2. Fixed reinsurance terms do not preserve equivalent protection
 
@@ -157,7 +154,10 @@ Using the same attachment, the occurrence limit required to restore the independ
 
 These are conditional model results calculated with a $1,000 numerical search tolerance. They are not recommended insurance placements.
 
-![Required occurrence limits](https://raw.githubusercontent.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/v2.0.0/data/processed/phase_2/notebook_13_phase_2_results/plots/required_limit_comparison.png)
+<figure class="case-study-figure">
+  <img src="{{ '/assets/images/required-limit-comparison.png' | relative_url }}" alt="Required occurrence reinsurance limits under the independent and spatially correlated cases">
+  <figcaption>Required occurrence limits under a common attachment.</figcaption>
+</figure>
 
 ### 3. Parametric protection introduces visible basis risk
 
@@ -165,7 +165,10 @@ A source-based magnitude-distance trigger is calibrated using catalog years 1 th
 
 The same collateralized payout vector is applied across all dependence cases, so the comparison does not refit the trigger to each loss result. The evaluation tracks protection shortfall, excess payout, collateral depletion, cash net loss, unfunded loss, and surplus separately.
 
-![Held-out parametric basis risk](https://raw.githubusercontent.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/v2.0.0/data/processed/phase_2/notebook_13_phase_2_results/plots/evaluation_basis_risk.png)
+<figure class="case-study-figure">
+  <img src="{{ '/assets/images/evaluation-basis-risk.png' | relative_url }}" alt="Held-out parametric basis-risk metrics for the modeled protection structure">
+  <figcaption>Held-out parametric basis-risk evaluation.</figcaption>
+</figure>
 
 ---
 
@@ -219,7 +222,3 @@ Sparse annual losses also make selected VaR measures non-informative. TVaR and s
 - **[v2.0.0 release](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.0)**
 
 [Back to Projects](/projects/)
-
-
-  </div>
-</article>
