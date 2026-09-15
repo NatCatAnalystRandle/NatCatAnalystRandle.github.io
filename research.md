@@ -2,7 +2,7 @@
 layout: page
 title: Research
 kicker: Ongoing doctoral work
-description: Uncertainty, correlation, and the consequences of earthquakes and tsunamis.
+description: Emmanuel Randle's doctoral research on earthquake and tsunami risk, spatial correlation, damage modeling, and population displacement.
 permalink: /research/
 ---
 

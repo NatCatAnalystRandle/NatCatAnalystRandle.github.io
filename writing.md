@@ -2,7 +2,7 @@
 layout: page
 title: Writing
 kicker: Technical notes
-description: Writing on catastrophe risk, natural hazards, probabilistic modeling, insurance, and resilience.
+description: Technical writing by Emmanuel Randle on catastrophe risk, natural hazards, probabilistic modeling, insurance, and resilience.
 permalink: /writing/
 ---
 

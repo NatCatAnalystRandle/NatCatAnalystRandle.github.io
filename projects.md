@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 kicker: Independent technical work
-description: Engineering models applied to catastrophe risk, insurance, and reinsurance.
+description: Catastrophe-risk modeling projects by Emmanuel Randle covering earthquake damage, insurance, reinsurance, and parametric risk transfer.
 permalink: /projects/
 ---
 

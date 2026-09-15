@@ -2,7 +2,8 @@
 layout: page
 title: "Seismic Correlation and Insurance Loss"
 kicker: Technical case study / v2.0.0
-description: Earthquake portfolio loss, reinsurance requirements, and parametric basis risk.
+description: Emmanuel Randle's earthquake catastrophe-risk model linking spatial correlation, portfolio loss, reinsurance requirements, and parametric basis risk.
+social_image: /assets/images/required-limit-comparison.png
 permalink: /projects/seismic-catastrophe-risk-model/
 ---
 

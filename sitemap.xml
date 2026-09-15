@@ -1,0 +1,16 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>{{ '/' | absolute_url }}</loc></url>
+  <url><loc>{{ '/research/' | absolute_url }}</loc></url>
+  <url><loc>{{ '/projects/' | absolute_url }}</loc></url>
+  <url><loc>{{ '/projects/seismic-catastrophe-risk-model/' | absolute_url }}</loc></url>
+  <url><loc>{{ '/presentations/' | absolute_url }}</loc></url>
+  <url><loc>{{ '/about/' | absolute_url }}</loc></url>
+  <url><loc>{{ '/awards/' | absolute_url }}</loc></url>
+  <url><loc>{{ '/publications/' | absolute_url }}</loc></url>
+  <url><loc>{{ '/writing/' | absolute_url }}</loc></url>
+</urlset>

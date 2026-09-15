@@ -6,36 +6,78 @@
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ page.description | default: site.description | strip_newlines | escape }}">
     <meta name="author" content="Emmanuel Randle">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#f8f6f1">
     <link rel="canonical" href="{{ page.url | absolute_url }}">
     <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="{{ page.og_type | default: 'website' }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+    <meta property="og:description" content="{{ page.description | default: site.description | strip_newlines | escape }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ page.social_image | default: site.social_image | absolute_url }}">
+    <meta property="og:image:alt" content="Emmanuel Randle, doctoral researcher in earthquake and catastrophe risk">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+    <meta name="twitter:description" content="{{ page.description | default: site.description | strip_newlines | escape }}">
+    <meta name="twitter:image" content="{{ page.social_image | default: site.social_image | absolute_url }}">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Emmanuel Randle",
-        "url": "{{ '/' | absolute_url }}",
-        "jobTitle": "Doctoral Researcher in Civil Engineering",
-        "affiliation": {
-          "@type": "CollegeOrUniversity",
-          "name": "Oregon State University"
-        },
-        "alumniOf": [
-          {"@type": "CollegeOrUniversity", "name": "Durham University"},
-          {"@type": "CollegeOrUniversity", "name": "University of Lagos"}
-        ],
-        "sameAs": [
-          "https://github.com/NatCatAnalystRandle",
-          "https://www.linkedin.com/in/emmanuel-randle/"
-        ],
-        "knowsAbout": [
-          "Catastrophe risk modeling",
-          "Earthquake engineering",
-          "Tsunami risk",
-          "Spatial correlation",
-          "Insurance and reinsurance analytics",
-          "Community resilience"
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "{{ '/' | absolute_url }}#person",
+            "name": "Emmanuel Randle",
+            "url": "{{ '/' | absolute_url }}",
+            "image": "{{ '/assets/images/13ncee-portrait.jpg' | absolute_url }}",
+            "jobTitle": "Doctoral Researcher in Civil Engineering",
+            "affiliation": {
+              "@type": "CollegeOrUniversity",
+              "name": "Oregon State University",
+              "url": "https://oregonstate.edu/"
+            },
+            "alumniOf": [
+              {"@type": "CollegeOrUniversity", "name": "Durham University", "url": "https://www.durham.ac.uk/"},
+              {"@type": "CollegeOrUniversity", "name": "University of Lagos", "url": "https://unilag.edu.ng/"}
+            ],
+            "sameAs": [
+              "https://github.com/NatCatAnalystRandle",
+              "https://www.linkedin.com/in/emmanuel-randle/",
+              "https://scholar.google.com/citations?user=ds65kksAAAAJ",
+              "https://www.researchgate.net/profile/Emmanuel-Randle"
+            ],
+            "knowsAbout": [
+              "Earthquake risk assessment",
+              "Tsunami risk assessment",
+              "Catastrophe risk modeling",
+              "Spatial correlation",
+              "Uncertainty propagation",
+              "Building damage modeling",
+              "Population displacement",
+              "Insurance and reinsurance analytics"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "{{ '/' | absolute_url }}#website",
+            "url": "{{ '/' | absolute_url }}",
+            "name": "Emmanuel Randle",
+            "description": "{{ site.description | strip_newlines | escape }}",
+            "publisher": {"@id": "{{ '/' | absolute_url }}#person"}
+          },
+          {
+            "@type": "{{ page.schema_type | default: 'WebPage' }}",
+            "@id": "{{ page.url | absolute_url }}#webpage",
+            "url": "{{ page.url | absolute_url }}",
+            "name": "{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}",
+            "description": "{{ page.description | default: site.description | strip_newlines | escape }}",
+            "isPartOf": {"@id": "{{ '/' | absolute_url }}#website"},
+            "about": {"@id": "{{ '/' | absolute_url }}#person"},
+            "mainEntity": {"@id": "{{ '/' | absolute_url }}#person"}
+          }
         ]
       }
     </script>

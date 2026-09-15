@@ -2,7 +2,8 @@
 layout: page
 title: Awards & recognition
 kicker: Selected distinctions
-description: Scholarships and research recognition supporting my engineering and natural-hazards work.
+description: Scholarships, research awards, and professional recognition received by Emmanuel Randle.
+social_image: /assets/images/nheri-award.jpg
 permalink: /awards/
 ---
 

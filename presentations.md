@@ -2,7 +2,8 @@
 layout: page
 title: Presentations & workshops
 kicker: Research in conversation
-description: Selected talks, posters, and opportunities to learn from the natural-hazards community.
+description: Selected earthquake, tsunami, and catastrophe-risk presentations and workshops by Emmanuel Randle.
+social_image: /assets/images/13ncee-presentation.jpg
 permalink: /presentations/
 ---
 

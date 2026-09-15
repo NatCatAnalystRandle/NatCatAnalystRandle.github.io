@@ -2,7 +2,7 @@
 layout: page
 title: Publications
 kicker: Research record
-description: Peer-reviewed journal articles, conference papers, and research publications.
+description: Peer-reviewed articles, conference papers, and natural-hazards research publications by Emmanuel Randle.
 permalink: /publications/
 ---
 

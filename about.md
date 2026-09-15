@@ -2,7 +2,7 @@
 layout: page
 title: About me
 kicker: Background & community
-description: Civil engineering, natural hazards, and an interest in how risk informs decisions.
+description: Emmanuel Randle's education, research background, engineering leadership, and professional interests in natural hazards and catastrophe risk.
 permalink: /about/
 ---
 

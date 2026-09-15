@@ -4,6 +4,9 @@ description: >
   damage and population consequences, and catastrophe risk for insurance and reinsurance.
 url: "https://natcatanalystrandle.github.io"
 baseurl: ""
+author: Emmanuel Randle
+social_image: /assets/images/13ncee-portrait.jpg
+repository: NatCatAnalystRandle/NatCatAnalystRandle.github.io
 markdown: kramdown
 permalink: pretty
 exclude:

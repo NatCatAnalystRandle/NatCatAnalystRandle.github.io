@@ -1,7 +1,9 @@
 ---
 layout: default
-title:
-description: Emmanuel Randle is an Oregon State University doctoral researcher working on earthquake and tsunami risk, uncertainty, correlated damage, population displacement, and catastrophe-risk applications.
+title: Earthquake & Catastrophe Risk Researcher
+schema_type: ProfilePage
+og_type: profile
+description: Emmanuel Randle researches earthquake and tsunami risk, spatial correlation, population displacement, and catastrophe modeling at Oregon State University.
 ---
 
 <section class="intro" aria-labelledby="home-title">
