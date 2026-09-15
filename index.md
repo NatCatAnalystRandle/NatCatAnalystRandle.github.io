@@ -52,7 +52,7 @@ description: Emmanuel Randle researches earthquake and tsunami risk, spatial cor
       <p>Using a common event catalog, I compare how two spatial-correlation models change portfolio tails and the protection provided by the same reinsurance terms.</p>
       <div class="inline-links">
         <a href="{{ '/projects/seismic-catastrophe-risk-model/' | relative_url }}">Read the case study</a>
-        <a href="https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/tree/v2.0.0">Source &amp; results</a>
+        <a href="https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/tree/v2.0.2">Source &amp; results</a>
       </div>
     </div>
     <figure>

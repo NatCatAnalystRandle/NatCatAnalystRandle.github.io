@@ -1,15 +1,15 @@
 ---
 layout: page
 title: "Seismic Correlation and Insurance Loss"
-kicker: Technical case study / v2.0.0
+kicker: Technical case study / v2.0.2
 description: Emmanuel Randle's earthquake catastrophe-risk model linking spatial correlation, portfolio loss, reinsurance requirements, and parametric basis risk.
 social_image: /assets/images/required-limit-comparison.png
 permalink: /projects/seismic-catastrophe-risk-model/
 ---
 
 <div class="case-study-actions">
-  <a href="https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/tree/v2.0.0">Explore the validated project</a>
-  <a href="https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.0">View the v2.0.0 release</a>
+  <a href="https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/tree/v2.0.2">Explore the validated project</a>
+  <a href="https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.2">View the v2.0.2 release</a>
 </div>
 
 ## Project overview
@@ -218,8 +218,8 @@ Sparse annual losses also make selected VaR measures non-informative. TVaR and s
 
 ## Explore the project
 
-- **[Validated v2.0.0 source and results](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/tree/v2.0.0)**
-- **[Phase 2 results report](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/blob/v2.0.0/data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_results_report.md)**
-- **[v2.0.0 release](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.0)**
+- **[Validated v2.0.2 source and results](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/tree/v2.0.2)**
+- **[Phase 2 results report](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/blob/v2.0.2/data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_results_report.md)**
+- **[v2.0.2 release](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.2)**
 
 [Back to Projects](/projects/)
